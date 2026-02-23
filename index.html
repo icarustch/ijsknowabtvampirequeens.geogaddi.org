@@ -1,96 +1,124 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>cats are tuff :3</title>
 <style>
 @font-face {
-font-family: 'ITC Avant Garde Gothic Std Extra Light';
-src: url('./ITC Avant Garde Gothic Std Extra Light.otf') format('opentype');
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    src: url('./ITC Avant Garde Gothic Std Extra Light.otf') format('opentype');
 }
+
 body {
-background-image: url('https://s3.amazonaws.com//depot.pacdudegames.com/spacehey/5ew8Nig.jpg');
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-font-family: 'Noto Sans JP', sans-serif;
-color: white;
-margin: 0;
-padding: 20px;
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 50px 20px;
 }
-main {
-max-width: 900px;
-margin: 20px auto;
-padding: 20px;
-background-image: url('https://s3.amazonaws.com//depot.pacdudegames.com/spacehey/FmRwDaZ.jpg');
-border: 2px solid #60a5fa;
-border-radius: 20px;
-box-shadow: 0px 0px 10px #000;
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
 }
+
 h1 {
-font-family: 'ITC Avant Garde Gothic Std Extra Light', sans-serif;
-text-align: center;
+    font-family: 'ITC Avant Garde Gothic Std Extra Light', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
 }
+
+.katamari-box {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
 .align-left {
-float: left;
-margin-right: 15px;
-max-width: 180px;
-border: 2px solid #60a5fa;
+    width: 250px;
+    height: auto;
+    border: 1px solid #333;
 }
-.music-box {
-padding: 10px;
-background: linear-gradient(180deg, rgba(180,200,255,0.18), rgba(40,60,120,0.35));
-border: 1px solid rgba(200,220,255,0.22);
-border-radius: 14px;
-backdrop-filter: blur(7px);
-margin-bottom: 15px;
+
+.tribute-text {
+    font-family: Arial;
+    text-align: right;
+    font-style: italic;
+    color: #888;
 }
-@keyframes spin { 100% { transform:rotate(360deg); } }
-.recordPlayer {
-position: fixed;
-right: 1px;
-bottom: 0px;
-z-index: 400;
-display: flex;
-align-items: center;
+
+.bio-section {
+    clear: both;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
 }
-.cd { height: 150px; position: absolute; margin-left: 55px; animation: spin 1.88s linear infinite; }
-.cdCover { height: 150px; position: relative; z-index: 1; margin-right: 55px; }
-details { margin-top: 20px; cursor: pointer; }
-details summary { 
-background: #60a5fa; 
-padding: 10px; 
-color: white; 
-font-weight: bold; 
-text-align: center;
-list-style: none;
+
+/* THE CAT SPOILER */
+.cat-reveal {
+    margin-top: 50px;
+    text-align: center;
 }
-.cat-img { width: 100%; height: auto; display: block; margin-top: 10px; }
+
+details summary {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+details summary:hover {
+    background: #ff0055;
+    color: #fff;
+}
+
+.cat-reveal img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.music-creds {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
 </style>
 </head>
 <body>
-<main>
-<h1 style="font-family: 'ITC Avant Garde Gothic Std Extra Light'; text-align: center;">Welcome to the Femtanyl/IcarusTCH/Marcy webpage!</h1>
-<div class="music-box">
-<b>profile song!</b><br/>
-<p>(Will make the player better later)</p>
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2161584641/size=small/bgcol=333333/linkcol=0f91ff/track=3676524680/transparent=true/"></iframe>
+
+<div class="content-wrapper">
+    <h1 style="font-family: 'ITC Avant Garde Gothic Std Extra Light'; text-align: center;">Welcome to the Femtanyl/IcarusTCH/Marcy webpage!</h1>
+
+    <div class="katamari-box">
+        <img src="katamari.jpeg" class="align-left" alt="katamari">
+    </div>
+
+    <p class="tribute-text">I really like Femtanyl, so my username being Femtanyl is a tribute.</p>
+
+    <div class="bio-section">
+        <p>I'm a furry but I cant draw and I'm broke. I don't even have a fursona, so no ref :3. Anti gen AI so im NOT using that. I'm more or less a kemonomimi?? I do own a tail and animal ears. Send me a friend request if you think im cool :3. I'm a transgender girl (as established), RAGING with estrogen (literally and figuratively!).</p>
+
+        <p>DISCLAIMER!!! I separate ART from the artist when it comes to harmful shit. I do NOT support racism, trump, transphobia, or homophobia. Now back to my music taste! :3333</p>
+
+        <p><b>Artists:</b> Boards of Canada, Femtanyl, Machine Girl, Tyler, the Creator, Sewerslvt, Cynthoni, Strwxberrymilk, Redox, Deftones, Radiohead, Lone, Crystal Castles, Aphex Twin, My Bloody Valentine, etc.</p>
+        
+        <p class="music-creds">I use Logic Pro for my DAW, and i LOVe the VSTs: Roland cloud sh-101, u-he diva, and fab filter Saturn 2. The origin of my username is the song satellite anthem icarus by Boards of Canada.</p>
+    </div>
+
+    <div class="cat-reveal">
+        <details>
+            <summary>Click to see cat</summary>
+            <img src="cat.png" alt="Image of a Cat">
+        </details>
+    </div>
 </div>
-<img src="katamari.jpeg" class="align-left">
-<p style="font-family: Arial; text-align: right;">I really like Femtanyl, so my username being Femtanyl is a tribute.</p>
-<div style="clear: both;"></div>
-<p><b>About me:</b> I'm a furry but I cant draw and I'm broke. I don't even have a fursona, so no ref :3. Anti gen AI so im NOT using that. I'm more or less a kemonomimi?? I do own a tail and animal ears. I'm a transgender girl (as established), RAGING with estrogen (literally and figuratively!).</p>
-<p><b>Music:</b> DISCLAIMER!!! I separate ART from the artist when it comes to harmful shit. I do NOT support racism, trump, transphobia, or homophobia. Now back to my music taste! :3333</p>
-<p>Artists: Boards of Canada, Femtanyl, Machine Girl, Tyler, the Creator, Sewerslvt, Cynthoni, Strwxberrymilk, Redox, Deftones, Radiohead, Lone, Crystal Castles, Aphex Twin, etc.</p>
-<details>
-<summary>CLICK TO SEE CAT</summary>
-<img src="cat.png" class="cat-img" alt="Image of a Cat">
-</details>
-</main>
-<div class="recordPlayer">
-<img class="cd" src="https://i.postimg.cc/ZqDPLQYf/2024-03-26-031-Kleki.png"/>
-<img class="cdCover" src="https://i.postimg.cc/V6rqZFdz/2024-03-26-02x-Kleki.png"/>
-</div>
+
 </body>
 </html>
