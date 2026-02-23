@@ -5,165 +5,92 @@
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>cats are tuff :3</title>
 <style>
-/* 1. FONT DEFINITION */
 @font-face {
-    font-family: 'ITC Avant Garde';
-    src: url('./ITC Avant Garde Gothic Std Extra Light.otf') format('opentype');
+font-family: 'ITC Avant Garde Gothic Std Extra Light';
+src: url('./ITC Avant Garde Gothic Std Extra Light.otf') format('opentype');
 }
-
-/* 2. GLOBAL STYLES (SpaceHey Inspired) */
 body {
-    background-image: url('https://s3.amazonaws.com//depot.pacdudegames.com/spacehey/5ew8Nig.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+background-image: url('https://s3.amazonaws.com//depot.pacdudegames.com/spacehey/5ew8Nig.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+font-family: 'Noto Sans JP', sans-serif;
+color: white;
+margin: 0;
+padding: 20px;
 }
-
-/* 3. MAIN CONTAINER */
 main {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px 0;
-    background: rgba(13, 13, 13, 0.85);
-    backdrop-filter: blur(10px);
-    border: 2px solid #60a5fa;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
-    padding: 30px;
-    position: relative;
+max-width: 900px;
+margin: 20px auto;
+padding: 20px;
+background-image: url('https://s3.amazonaws.com//depot.pacdudegames.com/spacehey/FmRwDaZ.jpg');
+border: 2px solid #60a5fa;
+border-radius: 20px;
+box-shadow: 0px 0px 10px #000;
 }
-
 h1 {
-    font-family: 'ITC Avant Garde', sans-serif;
-    text-align: center;
-    font-size: 2.5em;
-    color: #60a5fa;
-    text-shadow: 2px 2px #ff0055;
-    margin-bottom: 20px;
+font-family: 'ITC Avant Garde Gothic Std Extra Light', sans-serif;
+text-align: center;
 }
-
-/* 4. BIO SECTION */
-.content-grid {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 20px;
-    border-top: 1px solid #60a5fa;
-    padding-top: 20px;
+.align-left {
+float: left;
+margin-right: 15px;
+max-width: 180px;
+border: 2px solid #60a5fa;
 }
-
-.pfp-area {
-    text-align: center;
+.music-box {
+padding: 10px;
+background: linear-gradient(180deg, rgba(180,200,255,0.18), rgba(40,60,120,0.35));
+border: 1px solid rgba(200,220,255,0.22);
+border-radius: 14px;
+backdrop-filter: blur(7px);
+margin-bottom: 15px;
 }
-
-.katamari-img {
-    width: 180px;
-    border: 3px solid #ff0055;
-    filter: drop-shadow(5px 5px 0px #60a5fa);
-}
-
-.bio-text {
-    line-height: 1.6;
-}
-
-/* 5. SPINNING RECORD (Fixed to bottom right) */
 @keyframes spin { 100% { transform:rotate(360deg); } }
-.record-box {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
+.recordPlayer {
+position: fixed;
+right: 1px;
+bottom: 0px;
+z-index: 400;
+display: flex;
+align-items: center;
 }
-.cd {
-    height: 100px;
-    animation: spin 2s linear infinite;
+.cd { height: 150px; position: absolute; margin-left: 55px; animation: spin 1.88s linear infinite; }
+.cdCover { height: 150px; position: relative; z-index: 1; margin-right: 55px; }
+details { margin-top: 20px; cursor: pointer; }
+details summary { 
+background: #60a5fa; 
+padding: 10px; 
+color: white; 
+font-weight: bold; 
+text-align: center;
+list-style: none;
 }
-.cd-cover {
-    height: 110px;
-    margin-left: -60px; /* Overlap effect */
-    z-index: 2;
-}
-
-/* 6. CLICK TO SEE CAT (Spoiler) */
-details {
-    margin: 20px 0;
-    border: 1px solid #ff0055;
-    background: #1a1a1a;
-}
-details summary {
-    padding: 10px;
-    cursor: pointer;
-    background: #ff0055;
-    font-weight: bold;
-    text-align: center;
-}
-.big-cat {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* 7. LINKS */
-.nav-links {
-    text-align: center;
-    margin: 15px 0;
-}
-.nav-links a {
-    color: #00ffff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
-}
-.nav-links a:hover { color: #ff0055; }
-
+.cat-img { width: 100%; height: auto; display: block; margin-top: 10px; }
 </style>
 </head>
 <body>
-
 <main>
-    <h1>femtamarcy</h1>
-    
-    <div class="nav-links">
-        <a href="https://inwaysshelives.bandcamp.com">Bandcamp</a> | 
-        <a href="https://twitter.com/icarustch">Twitter</a> | 
-        <a href="https://steamcommunity.com/id/IcarusTCH">Steam</a> |
-        <a href="https://geogaddi.org">Website</a>
-    </div>
-
-    <div class="content-grid">
-        <div class="pfp-area">
-            <img src="katamari.jpeg" class="katamari-img" alt="Katamari">
-            <p style="font-size: 0.8em; color: #60a5fa;">ONLINE!</p>
-        </div>
-        
-        <div class="bio-text">
-            <h3>About Me</h3>
-            <p>I'm a transfem furry, music producer, and massive VR nerd. I make electronic music (IDM/Experimental) inspired by Boards of Canada and the Mirror's Edge aesthetic.</p>
-            <p>I separate art from the artist. I love Hatsune Miku, Sylveon, and Femtanyl. <b>Raging with estrogen!</b></p>
-        </div>
-    </div>
-
-    <details>
-        <summary>klik to see cat. :3</summary>
-        <img src="cat.png" class="big-cat" alt="Image of a Cat">
-    </details>
-
-    <div style="margin-top:20px; padding:10px; background: rgba(0,0,0,0.5); border-left: 5px solid #60a5fa;">
-        <b>Music Gear:</b> Logic Pro, Roland SH-101, Diva, Valhalla VSTs.
-    </div>
-</main>
-
-<div class="record-box">
-    <img class="cd" src="https://i.postimg.cc/ZqDPLQYf/2024-03-26-031-Kleki.png"/>
-    <img class="cd-cover" src="https://i.postimg.cc/V6rqZFdz/2024-03-26-02x-Kleki.png"/>
+<h1 style="font-family: 'ITC Avant Garde Gothic Std Extra Light'; text-align: center;">Welcome to the Femtanyl/IcarusTCH/Marcy webpage!</h1>
+<div class="music-box">
+<b>profile song!</b><br/>
+<p>(Will make the player better later)</p>
+<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2161584641/size=small/bgcol=333333/linkcol=0f91ff/track=3676524680/transparent=true/"></iframe>
 </div>
-
+<img src="katamari.jpeg" class="align-left">
+<p style="font-family: Arial; text-align: right;">I really like Femtanyl, so my username being Femtanyl is a tribute.</p>
+<div style="clear: both;"></div>
+<p><b>About me:</b> I'm a furry but I cant draw and I'm broke. I don't even have a fursona, so no ref :3. Anti gen AI so im NOT using that. I'm more or less a kemonomimi?? I do own a tail and animal ears. I'm a transgender girl (as established), RAGING with estrogen (literally and figuratively!).</p>
+<p><b>Music:</b> DISCLAIMER!!! I separate ART from the artist when it comes to harmful shit. I do NOT support racism, trump, transphobia, or homophobia. Now back to my music taste! :3333</p>
+<p>Artists: Boards of Canada, Femtanyl, Machine Girl, Tyler, the Creator, Sewerslvt, Cynthoni, Strwxberrymilk, Redox, Deftones, Radiohead, Lone, Crystal Castles, Aphex Twin, etc.</p>
+<details>
+<summary>CLICK TO SEE CAT</summary>
+<img src="cat.png" class="cat-img" alt="Image of a Cat">
+</details>
+</main>
+<div class="recordPlayer">
+<img class="cd" src="https://i.postimg.cc/ZqDPLQYf/2024-03-26-031-Kleki.png"/>
+<img class="cdCover" src="https://i.postimg.cc/V6rqZFdz/2024-03-26-02x-Kleki.png"/>
+</div>
 </body>
 </html>
